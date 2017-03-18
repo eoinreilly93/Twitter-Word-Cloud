@@ -1,2 +1,2 @@
 # Twitter-Word-Cloud
-Script to create a word cloud for Twitter users
+Script used to generate wordclouds 
