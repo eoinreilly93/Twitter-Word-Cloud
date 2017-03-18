@@ -26,7 +26,7 @@ tweetsdf$created <- format(as.Date(tweetsdf$created,format="%Y-%m-%d"))
 tweetsdf <- subset(tweetsdf, created >= as.Date("2016-11-09"))
 
 #SAVE TO FILE
-write.csv(tweetsdf, "Resources/Datasets/DonaldTrumpTweets18_03_17.csv")
+write.csv(tweetsdf, "Resources/Datasets/DonaldTrumpTweets18_03_17.csv", row.names = FALSE)
 
 #EXTRACT AND CLEAN UP TEXT FROM TWEETS
 mach_text = sapply(mht, function(x) x$getText())
